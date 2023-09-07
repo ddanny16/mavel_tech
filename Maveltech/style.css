@@ -105,6 +105,14 @@ header.shadow .logo{
     justify-content: center;
     align-items: center;
 }
+.service{
+    width: 100%;
+    min-height: 440px;
+    background: url("images/banner2.png");
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
 .home-text{
     color: var(--bg-color);
