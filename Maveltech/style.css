@@ -99,8 +99,8 @@ header.shadow .logo{
 
 .home{
     width: 100%;
-    min-height: 440px;
-    background: url("images/banner2.png");
+    min-height: 570px;
+    background: url("images/maximalfocus-VT4rx775FT4-unsplash.jpg");
     display: grid;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ header.shadow .logo{
 .service{
     width: 100%;
     min-height: 440px;
-    background: url("images/banner2.png");
+    background: url("images/jj-ying-8bghKxNU1j0-unsplash.jpg");
     display: grid;
     justify-content: center;
     align-items: center;
