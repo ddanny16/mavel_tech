@@ -107,8 +107,10 @@ header.shadow .logo{
 }
 .service{
     width: 100%;
-    min-height: 440px;
-    background: url("images/jj-ying-8bghKxNU1j0-unsplash.jpg");
+    min-height: 600px;
+    background: url("images/maximalfocus-VT4rx775FT4-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -218,6 +220,14 @@ header.shadow .logo{
 .post-img{
     width: 100%;
     height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.post-img1{
+    width: 100%;
+    /* height: 200px; */
     object-fit: cover;
     object-position: center;
     border-radius: 0.5rem;
