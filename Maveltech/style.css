@@ -577,3 +577,11 @@ footer p{
 
 
 
+@media screen and (max-width: 400px) {
+    .logo{
+        font-size: 20px;
+    }
+    .logas{
+        display: none;
+    }
+}
