@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MavelTech-Contact</title>
+        <!-- Box-icon -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="stylesheet" href="/Maveltech/style.css">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav container">
+                <a href="#" class="logo">Mavel <span>Tech</span></a>
+                <div class="hold">
+
+                    <a href="/sevices.html" target="_blank" class="login ">Services</a>
+                    <a href="/contact.html" target="_blank" class="login">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="contact" id="contact">
+            <div class="home-text container">
+                <h2 class="home-title">Contact Us</h2>
+                <span class="home-subtitle">How you can reach us </span>
+            </div>
+        </section>
+        <h2><center>Contact Information</center></h2>
+
+        <main>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>
+                        <a href="https://wa.me/2348032593879"
+                            target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/abiodun-bello"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail.maveltech.org">
+                            <i class="far fa-envelope"></i>
+                            <span>Email (Gmail)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contact-form"
+                    onsubmit="sendEmail(); reset(); return false;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Phone No.:</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="sec aboutus">
+                    <h2>About Us</h2>
+                    <p> Mavel Technologies is a one-stop shop for everything ICT
+                        ,
+                        you need not look elsewhere for your technology needs as
+                        we
+                        offer a wide variety of ICT solutions to our customers
+                        ranging from infrastructural development to business
+                        technology consulting</p>
+                    <ul class="sci">
+                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="/sevices.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="sec contactBx">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class='bx bxs-map'></i></span>
+                            <span>Abiodun Bello <br> Managin Director <br>
+                                00</span>
+                        </li>
+                        <li>
+                            <span><i class='bx bx-envelope'></i></span>
+                            <p><a href="mailto:">mail.maveltech.org</a></p>
+
+                        </li>
+                        <li>
+                            <span><i class='bx bx-phone'></i></span>
+                            <p><a href="https://wa.me/+2348032593879">07721544512
+                                    08032593879
+                                </a></p>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script async defer>
+            function sendEmail(){
+                Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "dammydanny657@gmail.com",
+    Password : "B1DD3700B5B3B1EC153DC7DEE5D9408DA199",
+    To : 'temmydammy16@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name:" + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Phone: " + document.getElementById("phone").value
+    + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Succesfully")
+);
+            }
+
+        </script>
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>

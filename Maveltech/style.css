@@ -115,6 +115,16 @@ header.shadow .logo{
     justify-content: center;
     align-items: center;
 }
+.contact{
+    width: 100%;
+    min-height: 600px;
+    background: url("images/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg");
+    background-position: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
 .home-text{
     color: var(--bg-color);
